@@ -43,11 +43,11 @@ def send_register_email(email, send_type="register"):
     # server = smtplib.SMTP_SSL(host=EMAIL_HOST, port=EMAIL_PORT)
     # 如果为注册类型
     try:
-        to_mail = smtplib.SMTP(EMAIL_HOST, EMAIL_PORT)
+        to_mail = smtplib.SMTP_SSL()
+        to_mail.connect(EMAIL_HOST, EMAIL_PORT)
         to_mail.set_debuglevel(1)
         to_mail.ehlo()  # 向Gamil发送SMTP 'ehlo' 命令
         to_mail.starttls()
-        # smtp.connect()
         to_mail.login(EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
         if send_type == "register":
             email_title = "Hello and Welcome to ITEA"
