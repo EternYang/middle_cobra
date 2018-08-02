@@ -71,19 +71,19 @@ def send_register_email(email, send_type="register"):
             to_mail.sendmail(EMAIL_FROM, email, msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
         to_mail.quit()  # 关闭连接
     except smtplib.SMTPConnectError as e:
-        print('email send failed，connect failed:{code},{error}', e.smtp_code, e.smtp_error)
+        print('email send failed 1，connect failed:{code},{error}', e.smtp_code, e.smtp_error)
     except smtplib.SMTPAuthenticationError as e:
-        print('email send failed，Authentication failure:', e.smtp_code, e.smtp_error)
+        print('email send failed 2，Authentication failure:', e.smtp_code, e.smtp_error)
     except smtplib.SMTPSenderRefused as e:
-        print('email send failed，sender denied:', e.smtp_code, e.smtp_error)
+        print('email send failed 3，sender denied:', e.smtp_code, e.smtp_error)
     except smtplib.SMTPRecipientsRefused as e:
-        print('email send failed，The recipient was rejected:', e.smtp_code, e.smtp_error)
+        print('email send failed 4，The recipient was rejected:', e.smtp_code, e.smtp_error)
     except smtplib.SMTPDataError as e:
-        print('email send failed，Data reception is rejected:', e.smtp_code, e.smtp_error)
+        print('email send failed 5，Data reception is rejected:', e.smtp_code, e.smtp_error)
     except smtplib.SMTPException as e:
-        print('email send failed, ', e)
+        print('email send failed 6, ', e)
     except Exception as e:
-        print('email send failed, ', str(e))
+        print('email send failed 7', str(e))
 
 
 def _format_addr(s):
