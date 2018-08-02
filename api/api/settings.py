@@ -32,7 +32,6 @@ INSTALLED_APPS = [
     'itea',
     'app01',  # database
     'wallet',  # signals
-    'rest_framework_swagger'
     # 'debug_toolbar',
     # 'pympler',
 ]
