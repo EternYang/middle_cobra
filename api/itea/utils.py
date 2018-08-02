@@ -42,33 +42,48 @@ def send_register_email(email, send_type="register"):
     # MyThread(code).start()
     # server = smtplib.SMTP_SSL(host=EMAIL_HOST, port=EMAIL_PORT)
     # 如果为注册类型
-    to_mail = smtplib.SMTP(EMAIL_HOST, EMAIL_PORT)
-    to_mail.set_debuglevel(1)
-    to_mail.ehlo()  # 向Gamil发送SMTP 'ehlo' 命令
-    to_mail.starttls()
-    # smtp.connect()
-    to_mail.login(EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
-    if send_type == "register":
-        email_title = "Hello and Welcome to ITEA"
-        email_body = "please click this Registration activation link to active your email:\n" \
-                     "http://localhost:8000/itea/active/{0}".format(code)
-        msg = MIMEText(email_body)
-        msg['From'] = _format_addr("itea<%s>"%EMAIL_FROM)     # 括号里的对应发件人邮箱昵称、发件人邮箱账号
-        msg['To'] = email            # 括号里的对应收件人邮箱昵称、收件人邮箱账号
-        msg['Subject'] = email_title
-        to_mail.sendmail(EMAIL_FROM, email, msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
-    else:
-        email_title = "CHANGE PASSWORD"
-        email_body = "Hello, you are applying for resetting your password. " \
-                     "If this is not your own operation, please ignore it. " \
-                     "Please click the link below to complete the reset operation:\n" \
-                     "http://localhost:8000/itea/forgetpassword/{0}".format(code)
-        msg = MIMEText(email_body)
-        msg['From'] = _format_addr("itea<%s>" % EMAIL_FROM)  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
-        msg['To'] = email  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
-        msg['Subject'] = email_title
-        to_mail.sendmail(EMAIL_FROM, email, msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
-    to_mail.quit()  # 关闭连接
+    try:
+        to_mail = smtplib.SMTP(EMAIL_HOST, EMAIL_PORT)
+        to_mail.set_debuglevel(1)
+        to_mail.ehlo()  # 向Gamil发送SMTP 'ehlo' 命令
+        to_mail.starttls()
+        # smtp.connect()
+        to_mail.login(EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
+        if send_type == "register":
+            email_title = "Hello and Welcome to ITEA"
+            email_body = "please click this Registration activation link to active your email:\n" \
+                         "http://localhost:8000/itea/active/{0}".format(code)
+            msg = MIMEText(email_body)
+            msg['From'] = _format_addr("itea<%s>"%EMAIL_FROM)     # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+            msg['To'] = email            # 括号里的对应收件人邮箱昵称、收件人邮箱账号
+            msg['Subject'] = email_title
+            to_mail.sendmail(EMAIL_FROM, email, msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
+        else:
+            email_title = "CHANGE PASSWORD"
+            email_body = "Hello, you are applying for resetting your password. " \
+                         "If this is not your own operation, please ignore it. " \
+                         "Please click the link below to complete the reset operation:\n" \
+                         "http://localhost:8000/itea/forgetpassword/{0}".format(code)
+            msg = MIMEText(email_body)
+            msg['From'] = _format_addr("itea<%s>" % EMAIL_FROM)  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+            msg['To'] = email  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
+            msg['Subject'] = email_title
+            to_mail.sendmail(EMAIL_FROM, email, msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
+        to_mail.quit()  # 关闭连接
+    except smtplib.SMTPConnectError as e:
+        print('邮件发送失败，连接失败:{code},{error}', e.smtp_code, e.smtp_error)
+    except smtplib.SMTPAuthenticationError as e:
+        print('邮件发送失败，认证错误:', e.smtp_code, e.smtp_error)
+    except smtplib.SMTPSenderRefused as e:
+        print('邮件发送失败，发件人被拒绝:', e.smtp_code, e.smtp_error)
+    except smtplib.SMTPRecipientsRefused as e:
+        print('邮件发送失败，收件人被拒绝:', e.smtp_code, e.smtp_error)
+    except smtplib.SMTPDataError as e:
+        print('邮件发送失败，数据接收拒绝:', e.smtp_code, e.smtp_error)
+    except smtplib.SMTPException as e:
+        print('邮件发送失败, ', e.message)
+    except Exception as e:
+        print('邮件发送异常, ', str(e))
 
 
 def _format_addr(s):
