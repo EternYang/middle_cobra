@@ -247,7 +247,7 @@ class RechargeConsumptionView(generics.GenericAPIView):
 
 
 def requestCRM(method, url, data, perm_token):
-    request_url = "http://localhost:8000/api/{url_name}".format(url_name=url)
+    request_url = "http://localhost:80/api/{url_name}".format(url_name=url)
     header_dict = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
                    "Content-Type": "application/json"}
     if perm_token:
