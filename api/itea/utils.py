@@ -81,7 +81,7 @@ def send_register_email(email, send_type="register"):
     except smtplib.SMTPDataError as e:
         print('邮件发送失败，数据接收拒绝:', e.smtp_code, e.smtp_error)
     except smtplib.SMTPException as e:
-        print('邮件发送失败, ', e.message)
+        print('邮件发送失败, ', e)
     except Exception as e:
         print('邮件发送异常, ', str(e))
 
