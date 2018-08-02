@@ -1,0 +1,10 @@
+Django
+djangorestframework
+django-extensions
+psycopg2
+django-cors-headers
+django-dotenv
+django-filter
+django_crontab
+django-redis
+drf-extensions

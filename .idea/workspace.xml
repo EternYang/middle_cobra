@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3dde29de-4ae0-4496-bd21-12628edecffe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/img/grid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/img/grid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/fonts/slate.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/fonts/slate.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/fonts/slate.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/fonts/slate.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/images/navbar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/cobra.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api/static/js/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/managers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0002_auto_20180725_1105.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0003_auto_20180725_1113.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0004_auto_20180725_1339.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0005_auto_20180725_1352.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0006_emailverifyrecord.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0007_auto_20180725_1517.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0008_auto_20180726_1150.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0009_member_is_active.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0010_emailverifyrecord.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0011_loginsession.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0012_auto_20180727_1218.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/0013_member_nick_name.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/models.py.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app01/tests/test_models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/campaign/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/card/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/cobra.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/cobra_db.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/init.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/init_data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/init_data.json；" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/initial_data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/static/js/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/templates/resetpassword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/templates/result.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/itea/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/cron.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/services.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/member/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/services.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/membership/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/outlet/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/product/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/requirements/base.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/requirements/dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/requirements/prod.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/js/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/css/bootstrap-tweaks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/css/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/css/font-awesome-4.0.3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/css/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/css/highlight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/css/jquery.json-view.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/js/api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/js/highlight.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/docs/js/jquery.json-view.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/js/ajax-form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/js/coreapi-0.1.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/js/csrf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/js/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/js/jquery-3.3.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/static/rest_framework/js/prettify-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/transaction/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/utils/auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/utils/middleware.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/utils/pagination.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/utils/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/utils/query_filter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/utils/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/voucher/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/permissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/serializers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/signals.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/wallet/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/.github/ISSUE_TEMPLATE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/.github/PULL_REQUEST_TEMPLATE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/CODE_OF_CONDUCT.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Gemfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Gemfile.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Vagrantfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/config.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/deploy.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/font-selection.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/lib/multilang.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/lib/nesting_unique_head.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/lib/toc_data.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/lib/unique_head.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/fonts/slate.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/includes/_errors.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/index.html.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/all_nosearch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/app/_lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/app/_search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/app/_toc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/lib/_energize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/lib/_imagesloaded.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/lib/_jquery.highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/lib/_jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/javascripts/lib/_lunr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/layouts/layout.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/stylesheets/_icon-font.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/stylesheets/_normalize.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/stylesheets/_rtl.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/stylesheets/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/stylesheets/print.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/source/stylesheets/screen.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/public/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/App.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/App.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/App.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/registerServiceWorker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/yarn.lock" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/cobra$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1532596465524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/member" />
+    <SUITE FILE_PATH="coverage/cobra$views.coverage" NAME="views Coverage Results" MODIFIED="1532576188974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/itea" />
+    <SUITE FILE_PATH="coverage/cobra$.coverage" NAME=" Coverage Results" MODIFIED="1532596189598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/cobra$manage.coverage" NAME="manage Coverage Results" MODIFIED="1532490211893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>token</find>
+      <find>mobile_no</find>
+      <find>encode</find>
+      <find>build_opener</find>
+      <find>HTTPCookieProcessor</find>
+      <find>EMAIL_HOST_USER</find>
+      <find>Invalid token header. Clients should authenticate by passing the token key in the 'Authorization' HTTP header, prepended with the string 'Token '</find>
+      <find>CustomAuthentication</find>
+      <find>CRONJOBS</find>
+      <find>datetime</find>
+      <find>BASE_DIR</find>
+      <find>print</find>
+      <find>role</find>
+      <find>__str__</find>
+      <find>requestCRM</find>
+      <find>deduction</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Run_manage.py_Task" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/api/iteacontroller/apps.py" />
+        <option value="$PROJECT_DIR$/api/iteacontroller/views.py" />
+        <option value="$PROJECT_DIR$/api/itea/templates/test.html" />
+        <option value="$PROJECT_DIR$/api/membership/views.py" />
+        <option value="$PROJECT_DIR$/api/member/utils.py" />
+        <option value="$PROJECT_DIR$/api/member/urls.py" />
+        <option value="$PROJECT_DIR$/api/itea/templates/itea/success.py" />
+        <option value="$PROJECT_DIR$/api/itea/templates/itea/success.html" />
+        <option value="$PROJECT_DIR$/api/itea/templates/itea/result.html" />
+        <option value="$PROJECT_DIR$/api/utils/auth.py" />
+        <option value="$PROJECT_DIR$/api/itea/templates/itea/resetpassword.html" />
+        <option value="$PROJECT_DIR$/api/itea/templates/resetpassword.html" />
+        <option value="$PROJECT_DIR$/api/api/urls.py" />
+        <option value="$PROJECT_DIR$/api/itea/utils.py" />
+        <option value="$PROJECT_DIR$/api/wallet/views.py" />
+        <option value="$PROJECT_DIR$/api/itea/urls.py" />
+        <option value="$PROJECT_DIR$/api/app01/models.py" />
+        <option value="$PROJECT_DIR$/api/member/views.py" />
+        <option value="$PROJECT_DIR$/api/member/serializers.py" />
+        <option value="$PROJECT_DIR$/api/itea/views.py" />
+        <option value="$PROJECT_DIR$/api/api/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-98" />
+    <option name="y" value="33" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cobra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cobra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cobra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cobra" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cobra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cobra" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cobra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cobra" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="app01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cobra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cobra" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="itea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cobra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cobra" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cobra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cobra" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../itea" />
+    <property name="start.from.branch" value="master" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\cobra-masterSpace\cobra\api\api" />
+      <recent name="H:\cobra-masterSpace\cobra\api" />
+      <recent name="H:\cobra-masterSpace\cobra\api\itea\templates\itea\js" />
+      <recent name="H:\cobra-masterSpace\cobra\api\itea\templates\itea\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\cobra-masterSpace\cobra\api\itea\templates" />
+      <recent name="H:\cobra-masterSpace\cobra\api\itea\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Unnamed">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\Python\Anaconda\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api/member" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cobra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/member/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cobra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api/itea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cobra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/itea/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Python.manage" />
+      <item index="2" class="java.lang.String" itemvalue="Python.views" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.views" />
+        <item index="1" class="java.lang.String" itemvalue="Python.manage" />
+        <item index="2" class="java.lang.String" itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <branch name="master" repository="H:\cobra-masterSpace\cobra" />
+      <changelist id="3dde29de-4ae0-4496-bd21-12628edecffe" name="Default" comment="" />
+      <created>1531877715093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532490092424</updated>
+    </task>
+    <task id="LOCAL-00001" summary="修改login方法，原方法直接匹配用户名密码，返回用户名或密码错误，修改为分步匹配，将用户名不存在与密码错误分开&#10;edit login，old method login by username and password,return wrong username or password,edit to username not exist or wrong password">
+      <created>1531883928961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531883928961</updated>
+    </task>
+    <task id="LOCAL-00002" summary="删除控制层">
+      <created>1531911178020</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531911178020</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修改手机号注册为邮箱注册，">
+      <created>1532765764291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1532765764291</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改手机号注册为邮箱注册，">
+      <created>1532766270899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532766270899</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改手机号注册为邮箱注册，">
+      <created>1532766401276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1532766401276</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修改wallet请求中的一些bug">
+      <created>1532913623740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532913623740</updated>
+    </task>
+    <task id="LOCAL-00009" summary="修改发送邮箱为gmail，添加gmail服务器支持">
+      <created>1532936067581</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1532936067581</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14914162" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.50214595" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2596811" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改login方法，原方法直接匹配用户名密码，返回用户名或密码错误，修改为分步匹配，将用户名不存在与密码错误分开&#10;edit login，old method login by username and password,return wrong username or password,edit to username not exist or wrong password" />
+    <MESSAGE value="删除控制层" />
+    <MESSAGE value="修改手机号注册为邮箱注册，" />
+    <MESSAGE value="修改wallet请求中的一些bug" />
+    <MESSAGE value="修改发送邮箱为gmail，添加gmail服务器支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改发送邮箱为gmail，添加gmail服务器支持" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Python/Anaconda/Lib/smtplib.py</url>
+          <line>881</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Python/Anaconda/Lib/smtplib.py</url>
+          <line>567</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="15" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/api/member/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/templates/itea/success.py" />
+    <entry file="file://$PROJECT_DIR$/api/itea/templates/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/django/core/mail/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="244" column="8" lean-forward="false" selection-start-line="244" selection-start-column="8" selection-end-line="244" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/django/core/mail/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/email/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/email/mime/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/email/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="438" column="54" lean-forward="true" selection-start-line="438" selection-start-column="54" selection-end-line="438" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="583" column="30" lean-forward="true" selection-start-line="583" selection-start-column="30" selection-end-line="583" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/transaction/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="168" column="4" lean-forward="false" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/static/js/jquery-1.10.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/utils/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="51" column="67" lean-forward="false" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/member/services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/templates/resetpassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="127" column="24" lean-forward="false" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/boto/emr/instance_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="113" column="8" lean-forward="false" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/django/contrib/admin/options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="1987" column="16" lean-forward="false" selection-start-line="1987" selection-start-column="16" selection-end-line="1987" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/django/db/models/fields/related_descriptors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="625" column="12" lean-forward="false" selection-start-line="625" selection-start-column="12" selection-end-line="625" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/django/db/transaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="264" column="4" lean-forward="false" selection-start-line="264" selection-start-column="4" selection-end-line="264" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/membership/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/membership/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/membership/services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/boto/fps/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="198" column="13" lean-forward="false" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Anaconda/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1731">
+          <caret line="845" column="6" lean-forward="false" selection-start-line="845" selection-start-column="6" selection-end-line="845" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/wallet/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/member/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4009">
+          <caret line="221" column="69" lean-forward="false" selection-start-line="221" selection-start-column="69" selection-end-line="221" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/member/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2470">
+          <caret line="145" column="46" lean-forward="false" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="113" column="46" lean-forward="false" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/itea/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="71" column="54" lean-forward="false" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
