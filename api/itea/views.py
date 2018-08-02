@@ -70,9 +70,7 @@ class RegisterView(generics.GenericAPIView):
             send_register_email(email, "register")
             return Response({'msg': "Instructions sent to email"}, status=status.HTTP_201_CREATED)
         else:
-            return Response({"msg": "error,please try again"}, status=r.status_code)
-        send_register_email(email, "register")
-        return Response({'msg': "Instructions sent to email"}, status=status.HTTP_201_CREATED)
+            return Response({"msg": r.text}, status=r.status_code)
 
 
 class ActiveUserView(generics.GenericAPIView):
