@@ -301,9 +301,9 @@ BLOCKED_IPS = ('111.231.105.60', '111.231.215.222', '198.23.206.98',)
 
 
 # 添加邮箱相关配置(the setting of email service)
-EMAIL_HOST = "smtp.gmail.com"   # 服务器
-EMAIL_PORT = 465                 # 一般情况下都为25
-EMAIL_HOST_USER = "support@itea.sg"   # 账号
-EMAIL_HOST_PASSWORD = "yoda1688"  # 密码
+EMAIL_HOST = "smtp.qq.com"   # 服务器
+EMAIL_PORT = 25                # 一般情况下都为25
+EMAIL_HOST_USER = "312193268@qq.com"   # 账号
+EMAIL_HOST_PASSWORD = "uxglrklslxexbjhj"  # 密码
 EMAIL_USE_TLS = False             # 一般都为False
-EMAIL_FROM = "support@itea.sg"        # 邮箱来自
+EMAIL_FROM = "312193268@qq.com"        # 邮箱来自
