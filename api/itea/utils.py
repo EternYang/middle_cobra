@@ -52,7 +52,7 @@ def send_register_email(email, send_type="register"):
         if send_type == "register":
             email_title = "Hello and Welcome to ITEA"
             email_body = "please click this Registration activation link to active your email:\n" \
-                         "http://localhost:8000/itea/active/{0}".format(code)
+                         "http://47.74.218.213:8000/itea/active/{0}".format(code)
             msg = MIMEText(email_body)
             msg['From'] =  _format_addr("itea<%s>"%EMAIL_FROM)     # 括号里的对应发件人邮箱昵称、发件人邮箱账号
             msg['To'] = email            # 括号里的对应收件人邮箱昵称、收件人邮箱账号
@@ -63,7 +63,7 @@ def send_register_email(email, send_type="register"):
             email_body = "Hello, you are applying for resetting your password. " \
                          "If this is not your own operation, please ignore it. " \
                          "Please click the link below to complete the reset operation:\n" \
-                         "http://localhost:8000/itea/forgetpassword/{0}".format(code)
+                         "http://47.74.218.213:8000/itea/forgetpassword/{0}".format(code)
             msg = MIMEText(email_body)
             msg['From'] =  _format_addr("itea<%s>"%EMAIL_FROM)  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
             msg['To'] = email  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
