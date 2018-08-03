@@ -54,9 +54,9 @@ def send_register_email(email, send_type="register"):
             email_body = "please click this Registration activation link to active your email:\n" \
                          "http://localhost:8000/itea/active/{0}".format(code)
             msg = MIMEText(email_body)
-            msg['From'] = '%s <%s>' % (Header('itea'.decode('utf-8')).encode(), EMAIL_FROM)     # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+            msg['From'] =  _format_addr("itea<%s>"%EMAIL_FROM)     # 括号里的对应发件人邮箱昵称、发件人邮箱账号
             msg['To'] = email            # 括号里的对应收件人邮箱昵称、收件人邮箱账号
-            msg['Subject'] = Header(email_title.decode('utf-8')).encode()
+            msg['Subject'] = email_title
             to_mail.sendmail(EMAIL_FROM, email, msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
         else:
             email_title = "CHANGE PASSWORD"
@@ -65,9 +65,9 @@ def send_register_email(email, send_type="register"):
                          "Please click the link below to complete the reset operation:\n" \
                          "http://localhost:8000/itea/forgetpassword/{0}".format(code)
             msg = MIMEText(email_body)
-            msg['From'] = '%s <%s>' % (Header('itea'.decode('utf-8')).encode(), EMAIL_FROM)  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+            msg['From'] =  _format_addr("itea<%s>"%EMAIL_FROM)  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
             msg['To'] = email  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
-            msg['Subject'] = Header(email_title.decode('utf-8')).encode()
+            msg['Subject'] = email_title
             to_mail.sendmail(EMAIL_FROM, email, msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
         to_mail.quit()  # 关闭连接
     except smtplib.SMTPConnectError as e:
