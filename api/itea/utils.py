@@ -1,18 +1,20 @@
-import sched
 import smtplib
-import threading
-import time
+import json
 from email.mime.text import MIMEText
 from email.utils import formataddr, parseaddr
 from email.header import Header
 from random import Random  # 用于生成随机码
+
+import requests
 from django.core.mail import send_mail  # 发送邮件模块
 
-from app01.models import EmailVerifyRecord  # 邮箱验证model
+from app01.models import EmailVerifyRecord, Token, Member  # 邮箱验证model
+from rest_framework import status
+
+from .views import LoginSession
 
 from api.settings import EMAIL_FROM, EMAIL_HOST, EMAIL_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD  # setting.py添加的的配置信息
-
-
+from rest_framework.response import Response
 
 """
 生成随机字符串
@@ -95,6 +97,30 @@ def delete_code(code):
     print("删除被执行啦")
     if EmailVerifyRecord.objects.filter(code=code):
         EmailVerifyRecord.objects.filter(code=code).delete()
+
+
+def requestCRM(method, url, data, perm_token):
+    request_url = "http://localhost:8000/api/{url_name}".format(url_name=url)
+    header_dict = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
+                   "Content-Type": "application/json"}
+    if perm_token:
+        header_dict["Authorization"] = perm_token
+    print(header_dict)
+    return requests.request(method, request_url, data=json.dumps(data), headers=header_dict)
+
+
+def checktoken(token=""):
+    if not token:
+        return Response({"msg": "Token does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+    log_users = LoginSession.objects.filter(session=token)
+    if log_users and log_users[0]:
+        log_user = log_users[0]
+        user_id = Member.objects.get(email=log_user.email).id
+        authorization = Token.objects.get(user_id=user_id)
+        return Response({"authorization": authorization, "email": log_user.email}, status=status.HTTP_200_OK)
+    else:
+        return Response({"msg": "User is not login,please login first"}, status=status.HTTP_403_FORBIDDEN)
+
 
 """
 class MyThread(threading.Thread):

@@ -1,8 +1,7 @@
 from random import Random
-
+import json
 import requests
 import re
-import json
 # Create your views here.
 from django.shortcuts import render
 from django.views import View
@@ -12,10 +11,9 @@ from rest_framework import status, generics
 from rest_framework.response import Response
 from django.http import JsonResponse
 
-from app01.models import EmailVerifyRecord, Member, LoginSession, Wallet
-from .utils import send_register_email, random_str
+from app01.models import EmailVerifyRecord, Member, LoginSession, Wallet, Token
+from .utils import send_register_email, random_str, requestCRM, checktoken
 
-URL = ""
 
 
 class RegisterView(generics.GenericAPIView):
@@ -203,7 +201,8 @@ class LoginView(generics.GenericAPIView):
                 print(token)
                 ls.session = token
                 ls.save()
-                msg = {"Authorization": "Token {0}".format(json.loads(r.text)['token']), "token": token}
+                # msg = {"Authorization": "Token {0}".format(json.loads(r.text)['token']), "token": token}
+                msg = {"token": token}
                 return Response(msg, status=r.status_code)
             else:
                 return Response({"msg": r.text}, r.status_code)
@@ -215,21 +214,20 @@ class RechargeConsumptionView(generics.GenericAPIView):
     """
     def post(self, request):
         dic = request.data
-        print(dic)
         meta = request.META
-        print(meta)
-        perm_token = meta.get("HTTP_AUTHORIZATION", "")
-        login_token = dic.get("token", "")
+        login_token = meta.get("HTTP_TOKEN", "")
+        res = checktoken(login_token)
+        if res.status_code != 200:
+            return res
+        perm_token = res.data["authorization"]
         mon = dic.get("money", "")
-        email = dic.get("email", "")
-        if email:
-            # 有emai,说明是app，需要校验登录状态，无email，是pos请求，直接扣款
-            response = checktoken(token=login_token, email=email)
-            if not response.status_code == 200:
-                return response
-        else:
-            #是pos请求，根据token查询email
-            email = LoginSession.objects.get(session=login_token).email
+        # search request is contains email ,if contains,request is app,else,pos
+        chec_email = dic.get("email", "")
+        if chec_email:
+            perm_token = Token.objects.get(user_id="4").key
+        email = res.data["email"]
+        if chec_email != email:
+            return Response({"msg": "the token is not permission of your email, please retry"})
         member = Member.objects.get(email=email)
         wallet = member.wallet
         wal_id = wallet.id
@@ -237,35 +235,13 @@ class RechargeConsumptionView(generics.GenericAPIView):
             "wallet": wal_id,
             "money": mon
         }
-        r = requestCRM("POST", "v1/wallet/recharge-record/", data, perm_token)
+        r = requestCRM("POST", "v1/wallet/recharge-record/", data, str("token {0}".format(perm_token)))
         if r.status_code == 201:
             balance = Wallet.objects.get(pk=wal_id).balance
             return Response({"msg": "success", "balance": balance}, status=status.HTTP_200_OK)
         return Response({"msg": r.text}, status=r.status_code)
 
 
-def requestCRM(method, url, data, perm_token):
-    request_url = "http://localhost:8000/api/{url_name}".format(url_name=url)
-    header_dict = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
-                   "Content-Type": "application/json"}
-    if perm_token:
-        header_dict["Authorization"] = perm_token
-    print(header_dict)
-    return requests.request(method, request_url, data=json.dumps(data), headers=header_dict)
-
-
-def checktoken(token="", email=""):
-    if not token:
-        return Response({"msg": "Token does not exist"}, status=status.HTTP_403_FORBIDDEN)
-    login_session = LoginSession.objects.filter(pk=email)
-    if login_session and login_session[0]:
-        ls = login_session[0]
-        if ls.session == token:
-            return Response({"msg": "Token pass"}, status=status.HTTP_200_OK)
-        else:
-            return Response({"msg": "Token expires, please log in again"}, status=status.HTTP_403_FORBIDDEN)
-    else:
-        return Response({"msg": "User is not login,please login first"}, status=status.HTTP_403_FORBIDDEN)
 
 
 class ClosureView(generics.GenericAPIView):
