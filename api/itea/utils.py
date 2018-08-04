@@ -110,9 +110,16 @@ def requestCRM(method, url, data, perm_token):
 
 
 def checktoken(token=""):
+    """
+    验证token是否合法
+    :param token: token
+    :return:
+    """
     if not token:
-        return Response({"msg": "Token does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"msg": "Token is not exist in param,please bring Token in request header"},
+                        status=status.HTTP_400_BAD_REQUEST)
     log_users = LoginSession.objects.filter(session=token)
+
     if log_users and log_users[0]:
         log_user = log_users[0]
         user_id = Member.objects.get(email=log_user.email).id

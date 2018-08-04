@@ -12,7 +12,8 @@ urlpatterns = [
     url(r'^forgetpassword/(?P<code>\w*)/$', views.ForgetView.as_view()),
     url('login/', views.LoginView.as_view()),
     url('resetpassword/', views.ResetPasswordView.as_view()),
-    url('closure/*', views.ClosureView.as_view()),
+    # url('closure/*', views.ClosureView.as_view()),
     url(r'^static/(?P<path>.*)$', static.serve, {'document_root': settings.STATIC_URL}),
     url('recharge/', views.RechargeConsumptionView.as_view()),
+    #url('/')
 ]

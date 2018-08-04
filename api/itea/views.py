@@ -210,7 +210,9 @@ class LoginView(generics.GenericAPIView):
 
 class RechargeConsumptionView(generics.GenericAPIView):
     """
-    充值消费
+    充值消费,业务逻辑中不再关心请求来自于pos或app，只验证toekn，只要token合法，则直接赋权并请求CRM
+    @:param token:用户登录后返回的Login Token，存在于请求头中，每次请求必须携带
+    @:param money:充值或消费的金额，充值为正数，消费为负数
     """
     def post(self, request):
         dic = request.data
@@ -219,18 +221,9 @@ class RechargeConsumptionView(generics.GenericAPIView):
         res = checktoken(login_token)
         if res.status_code != 200:
             return res
-        perm_token = res.data["authorization"]
         mon = dic.get("money", "")
-        # search request is contains email ,if contains,request is app,else,pos
-        chec_email = dic.get("email", "")
-        if chec_email:
-            perm_token = Token.objects.get(user_id="4").key
-        email = res.data["email"]
-        if chec_email != email:
-            return Response({"msg": "the token is not permission of your email, please retry"})
-        member = Member.objects.get(email=email)
-        wallet = member.wallet
-        wal_id = wallet.id
+        perm_token = Token.objects.get(user_id="4").key
+        wal_id = Member.objects.get(email=res.data["email"]).wallet.id
         data = {
             "wallet": wal_id,
             "money": mon
